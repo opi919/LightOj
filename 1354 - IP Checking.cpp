@@ -1,0 +1,101 @@
+#include<iostream>
+//#include<stdlib.h>
+#include <bits/stdc++.h>
+//#include<string.h>
+//#include<cmath>
+#include<stdio.h>
+using namespace std;
+int main()
+{
+    int a,b=1,c1=0,d,x,y,z,c2=0,c3=0,c4=0,t,i,j,k,l,m;
+    char ch1,ch2,ch3,ch4,ch5,ch6;
+    cin>>t;
+    for(i=1; i<=t; i++)
+    {
+        cin>>a>>ch1>>x>>ch2>>y>>ch3>>z;
+        cin>>j>>ch4>>k>>ch5>>l>>ch6>>m;
+        b=1;c1=0;c2=0;c3=0;c4=0;
+        if(a%2==0)
+            c1+=0*b;
+        else
+            c1+=1*b;
+        b=b*10;
+        while(1)
+        {
+            d=a/2;
+            if(d%2==0)
+            {
+                c1+=0*b;
+            }
+            else
+                c1+=1*b;
+            b=b*10;
+            a=a/2;
+            if(a==0)
+                break;
+        }
+        b=1;
+        if(x%2==0)
+            c2+=0*b;
+        else
+            c2+=1*b;
+        b=b*10;
+        while(1)
+        {
+            d=x/2;
+            if(d%2==0)
+            {
+                c2+=0*b;
+            }
+            else
+                c2+=1*b;
+            b=b*10;
+            x=x/2;
+            if(x==0)
+                break;
+        }
+        b=1;
+        if(y%2==0)
+            c3+=0*b;
+        else
+            c3+=1*b;
+        b=b*10;
+        while(1)
+        {
+            d=y/2;
+            if(d%2==0)
+            {
+                c3+=0*b;
+            }
+            else
+                c3+=1*b;
+            b=b*10;
+            y=y/2;
+            if(y==0)
+                break;
+        }
+        b=1;
+        if(z%2==0)
+            c4+=0*b;
+        else
+            c4+=1*b;
+        b=b*10;
+        while(1)
+        {
+            d=z/2;
+            if(d%2==0)
+            {
+                c4+=0*b;
+            }
+            else
+                c4+=1*b;
+            b=b*10;
+            z=z/2;
+            if(z==0)
+                break;
+        }
+    if(c1==j&&c2==k&&c3==l&&c4==m) printf("Case %d: Yes\n",i);
+    else printf("Case %d: No\n",i);
+    }
+    return 0;
+}
